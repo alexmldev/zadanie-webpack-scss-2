@@ -1,0 +1,35 @@
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./base/typography";
+@import "./base/layout";
+
+body {
+    align-items: center;
+    color: $primary-color;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.welcome-box {
+    align-items: center;
+    background-color: $bg-primary-color;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 50vw;
+
+    &__title {
+        order: 2;
+        text-align:center;
+        text-transform: uppercase;
+    }
+    &__img {
+        max-width: 100%;
+        order: 1;
+        width: 50%;
+    }
+}
